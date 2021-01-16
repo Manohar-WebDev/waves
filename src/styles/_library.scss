@@ -1,0 +1,75 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Permanent Marker", cursive;
+  width: 20%;
+  background-color: transparent;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.9);
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 0.5s ease;
+  //align-items: center;
+  // text-align: center;
+  overflow-x: hidden;
+  h1 {
+    margin: 3rem;
+  }
+}
+
+.library-song {
+  // background-color: blue;
+  display: flex;
+  // margin: 3rem;
+  //  margin: 3rem 5rem;
+  align-items: center;
+  // //width: 100%;
+  position: relative;
+  margin: 3rem 0rem;
+  cursor: pointer;
+
+  left: 10%;
+  // top: 5%;
+
+  img {
+    width: 40%;
+  }
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.isSelected {
+  // background-color: violet;
+  color: white;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.9);
+}
+
+.hidden {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp4556100.jpg");
+  }
+}

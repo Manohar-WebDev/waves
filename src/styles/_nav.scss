@@ -1,0 +1,39 @@
+nav {
+  background-image: url("https://wallpapercave.com/wp/wp4556100.jpg");
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: whitesmoke;
+  font-family: "Pacifico", cursive;
+  h1 {
+    font-size: 2rem;
+    background: none;
+    // color: b;
+    //box-shadow: 1px 10px 10px black;
+    //  font-kerning: ;
+  }
+  button {
+    border: 2px solid rgba(65, 65, 65);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+    &:hover {
+      background-color: white;
+      color: black;
+      box-shadow: 1px 1px 20px rgb(14, 236, 88);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.song-container {
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  width: 100%;
+  //padding-top: 1rem;
+  margin-top: 5rem;
+  // background-color: grey;
+
+  img {
+    // height: 100%;
+    width: 20%;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+  h2 {
+    padding: 1rem 0rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

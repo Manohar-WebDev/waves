@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  background-image: url("https://wallpapercave.com/wp/wp4556100.jpg");
+  font-family: "Permanent Marker", cursive;
+}
+
+@import "./song";
+@import "./player";
+@import "./nav";
+@import "./library";
